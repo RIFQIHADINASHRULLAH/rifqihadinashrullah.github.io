@@ -1,0 +1,135 @@
+.grid-container {
+    display: grid;
+    grid-template-areas:
+      'navbar'
+      'header'
+      'content'
+      'footer';
+}
+
+.navbar{
+    grid-area: navbar;
+    background-color: red;
+}
+
+ul {
+    list-style-type: none;
+    overflow: auto;
+}
+
+li a {
+    display: block;
+    font-family: Open Sans;
+    color: rgb(231, 224, 224);
+    font-weight: bold;
+    text-align: center;
+    font-size: 16px;
+    float: left;
+    padding: 15px 10px 15px 90px
+}
+
+li a:hover {
+    color: yellow;
+}
+
+#logo {
+    font-family: Castellar;
+    color: rgb(231, 224, 224);
+    font-weight: bolder;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 1px;
+    text-shadow: 5px 1px 10px yellow;
+    font-weight: bold;
+    
+}
+
+.header{
+    grid-area: header;
+    background-image: url("https://static.tokopedia.net/blog/wp-content/uploads/2019/12/restoran.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+    width: 100%;
+    text-align: center;
+}
+
+.headerbutton  {
+    background-color: red;
+    border: none;
+    color: whitesmoke;
+    text-align: center;
+    font-size: 21px;
+    margin: 50px 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.headerbutton:hover {
+    background-color: red;
+    text-align: center;
+}
+
+.content{
+    grid-area: content;
+    background-color: whitesmoke;
+    text-align: center;
+    padding: 100px;
+}
+
+.column {
+    float: left;
+    width: 25%;
+    padding: 10px 0px 10px 0px  ;
+}
+
+.row {
+    margin: 0 -5px;
+}
+
+.card {
+    width: 90%;
+    border-style: solid;
+}
+
+.container {
+    padding: 10px 25px;
+}
+
+#customtable {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+}
+
+#customtable td, #customtable th {
+    border: 1px solid rgb(231, 224, 224);
+    padding: 10px;
+    text-align: center;
+}
+
+#customtable tr:nth-child(even){background-color: whitesmoke;}
+#customtable tr:hover {background-color: rgb(231, 224, 224);}
+
+#customtable th {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+    background-color: red;
+    color: whitesmoke;
+}
+
+.footer{
+    grid-area: footer;
+    background-color: red;
+    text-align: center;
+    color: whitesmoke;
+    padding: 25px 30px 25px 100px;
+}
